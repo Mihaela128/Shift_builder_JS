@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="editProfile.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images.jpeg" alt="Company Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/home/home.html">Home</a></li>
+          <li id="greeting">Hello, <span id="usernameSpan"></span></li>
+          <li id="logoutButton"><a href="/login/login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Edit profile -->
+
+    <div class="edit">
+      <h2>Edit Profile</h2>
+      <form id="editProfileForm">
+        <label for="email">Email:</label><br />
+        <input type="email" id="email"  /><br />
+
+        <label for="username">Username:</label><br />
+        <input type="text" id="username"  /><br />
+
+        <label for="password">Password:</label><br />
+        <input type="password" id="password"  /><br />
+
+        <label for="firstName">First Name:</label><br />
+        <input type="text" id="firstName"  /><br />
+
+        <label for="lastName">Last Name:</label><br />
+        <input type="text" id="lastName"  /><br />
+
+        <label for="age">Age:</label><br />
+        <input type="number" id="age"  /><br />
+
+        <button type="submit" id="updateProfileButton">Update</button>
+        <button type="button" id="cancelProfileButton">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <p>© 2023 DNA Laboratories</p>
+      </div>
+    </footer>
+
+    <script src="editProfile.js"></script>
+  </body>
+</html>
